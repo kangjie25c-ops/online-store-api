@@ -1,6 +1,7 @@
 // Application entry point: configures Express, registers middleware and routes
 
 const express = require('express');
+const cors = require('cors');
 const connectDB = require('./db');
 
 const app = express();
@@ -11,6 +12,7 @@ connectDB();
 
 // Step 2: Register middleware
 // express.json() allows the server to parse JSON request bodies
+app.use(cors());
 app.use(express.json());
 
 // Step 3: Register routes

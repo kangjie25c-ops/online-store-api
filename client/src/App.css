@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #b18c8c;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* CARD */
+.card {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+    color: green;
+    font-weight: bold;
+}
+
+.category {
+    background: #FFE5CC;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* BUTTONS */
+.cart-btn {
+    width: 100%;
+    background: #2D7DD2;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit {
+    background: #5C7CFA;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.delete {
+    background: #FA5252;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
